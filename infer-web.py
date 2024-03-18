@@ -1619,10 +1619,10 @@ def get_presets():
     return preset_names
 
 with gr.Blocks(theme=gr.themes.Soft()) as app:
-    gr.HTML("<h1> The Mangio-RVC-Fork by ba1yya 🤓🥰 </h1>")
+    gr.HTML("<h1> Project 🥰 </h1>")
     gr.Markdown(
         value=i18n(
-            "<b>Скрипт перевел и обновил https://www.youtube.com/@ba1yya</b>.</b>."
+            "<b>Sonic</b>.</b>."
         )
     )
     with gr.Tabs():
