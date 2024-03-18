@@ -51,7 +51,7 @@ class Config:
             help="Do not open in browser automatically",
         )
         parser.add_argument( # Fork Feature. Paperspace integration for web UI
-            "--paperspace", action="store_true", help="Note that this argument just shares a gradio link for the web UI. Thus can be used on other non-local CLI systems."
+            "--paperspace", action="store_false", help="Note that this argument just shares a gradio link for the web UI. Thus can be used on other non-local CLI systems."
         )
         parser.add_argument( # Fork Feature. Embed a CLI into the infer-web.py
             "--is_cli", action="store_true", help="Use the CLI instead of setting up a gradio UI. This flag will launch an RVC text interface where you can execute functions from infer-web.py!"
