@@ -2240,7 +2240,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as app:
         #     gr.Markdown(value=i18n("xxxxx"))
 
     if config.iscolab or config.paperspace: # Share gradio link for colab and paperspace (FORK FEATURE)
-        app.queue(concurrency_count=511, max_size=1022).launch(share=True)
+        app.queue(concurrency_count=511, max_size=1022).launch(share=False)
     else:
         app.queue(concurrency_count=511, max_size=1022).launch(
             server_name="0.0.0.0",
